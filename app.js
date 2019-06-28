@@ -19,7 +19,8 @@ app.use('*/img', express.static(path.join(__dirname, 'public/img')));
 app.engine('hbs', exphbs({
   extname: 'hbs',
   defaultLayout: 'main',
-  LayoutsDir: __dirname + 'views/layouts',
+  LayoutsDir: __dirname + '/views/layouts',
+  partialsDir: __dirname + '/views/partials',
 }));
 app.set('view engine', 'hbs');
 
