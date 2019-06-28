@@ -1,39 +1,4 @@
-$primary-color: #444;
-$white-color: #fff;
-$secondary-color: #eece1a;
-$show-home-image: true;
-$home-image: url(./img/background.png);
-$background-opacity: 0.9;
-
-
-@mixin easeOut {
-  transition: all .5s ease-out;
-}
-
-@mixin background {
-  @if $show-home-image {
-    &#bg-img {
-      background: $home-image;
-      background-attachment: fixed;
-      background-size: cover;
-      background-repeat: no-repeat;
-
-      // sudo element
-      // when you use :after should have " content:' ' "
-      &:after {
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba($primary-color, $background-opacity);
-        z-index: -1;
-      }
-    }
-  }
-}
-
+@import 'config';
 * {
   box-sizing: border-box;
 }
