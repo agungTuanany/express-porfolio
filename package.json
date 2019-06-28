@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon app.js & npm run sass",
-    "sass": "node-sass -w public/scss -o public/css --recursive"
+    "sass": "node-sass -w public/scss -o public/css --recursive",
+    "start": "node app.js"
   },
   "keywords": [],
   "author": "",
@@ -18,5 +19,10 @@
   },
   "devDependencies": {
     "nodemon": "^1.19.1"
+  },
+  "engines": {
+    "node": "10.x",
+    "npm": "6.x",
+    "yarn": "1.x"
   }
 }
