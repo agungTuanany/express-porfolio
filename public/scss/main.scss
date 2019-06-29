@@ -70,10 +70,12 @@ main {
   }
 
   &#home {
-    @include background;
-    overflow: hidden;
     h1 {
       margin-top: 20vh;
+    }
+    .bg-home {
+      @include background;
+      overflow: hidden;
     }
   }
 }

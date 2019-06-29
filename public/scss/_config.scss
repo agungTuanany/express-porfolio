@@ -1,6 +1,6 @@
 // COLOR ITEM
 $show-home-image: true;
-$home-image: url(./img/background.png);
+$home-image: url(./img/Asset-10.svg);
 $background-opacity: 0.9;
 
 html {
@@ -24,23 +24,18 @@ html[data-theme='dark'] {
 @mixin background {
   @if $show-home-image {
     &.bg-home {
-      background: $home-image;
-      background-attachment: fixed;
-      background-size: cover;
-      background-repeat: no-repeat;
-      height: 100vh;
-      opacity: .9;
 
       // sudo element
       // when you use :after should have " content:' ' "
       &:after {
         content: '';
         position: absolute;
-        top: 0;
-        right: 0;
+        top: 103px;
+        right:0;
         width: 100%;
         height: 100%;
-        background: var(--bg);
+        background: $home-image var(--bg);
+        background-repeat: no-repeat;
         z-index: -1;
       }
     }
