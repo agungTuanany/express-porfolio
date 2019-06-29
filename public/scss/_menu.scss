@@ -11,7 +11,7 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: $white-color;
+    background: var(--color-text);
     @include easeOut;
   }
 
@@ -67,7 +67,7 @@
   &-nav {
     margin: 0;
     padding: 0;
-    background: darken($primary-color, 5);
+    background: var(--color-text);
     list-style: none;
     transform: translate3d(0, -100%, 0);
     @include easeOut;
@@ -80,7 +80,7 @@
 
   // Branding Side
   &-branding {
-    background: $primary-color;
+    background: var(--color-text);
     transform: translate3d(0, 100%, 0);
     @include easeOut;
 
@@ -95,7 +95,7 @@
       // change image with some random words
       background: url('./img/background.png') cover fixed no-repeat;
       border-radius: 50%;
-      border: solid 3px $secondary-color;
+      border: solid 3px #eece1a;
     }
   }
 
@@ -109,7 +109,7 @@
     }
 
     &.current > .nav-link {
-      color: $secondary-color;
+      color: #eece1a !important;
     }
   }
 
@@ -120,12 +120,12 @@
     font-size: 2rem;
     padding: 1rem 0;
     font-weight: 300;
-    color: $white-color;
-    tex-decoration: none;
+    color: var(--bg) !important;
+    text-decoration: none;
     @include easeOut;
 
     &:hover {
-      color: $secondary-color;
+      color: #eece1a !important;
     }
   }
 }
@@ -137,3 +137,49 @@
     transition-delay: $x * 0.2s;
  }
 }
+
+// Toggle light mode
+input[type=checkbox] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+
+  &:checked + label {
+    background: var(--color-headings);
+  }
+
+  &:checked + label:after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+  }
+}
+
+label {
+  cursor: pointer;
+  text-indent: -999px;
+  width: 52px;
+  height: 27px;
+  background: var(--bg-panel);
+  float: left;
+  border-radius: 100px;
+  position: relative;
+  top: 30px;
+  left: 4rem;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 20px;
+    height: 20px;
+    background: grey;
+    border-radius: 90px;
+    transition: .3s;
+  }
+
+  &:active:after {
+    width: 45px;
+  }
+}
+

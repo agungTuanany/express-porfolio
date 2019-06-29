@@ -7,8 +7,7 @@
 }
 
 body {
-  background: $primary-color;
-  color: $white-color;
+  background: var(--bg);
   height: 100%;
   margin: 0;
   padding: 0;
@@ -24,18 +23,19 @@ h1, h2, h3, h4, h5, h6 {
 
   &.lg-heading {
   font-size: 6rem;
+  color: var(--color-text);
   }
 
   &.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
     // lighten is a sass features
-    background: rgba(lighten($primary-color, 2), 0.5);
+    color: var(--color-text);
   }
 }
 
 a {
-  color : $white-color;
+  color : #fff;
   text-decoration: none;
 }
 
@@ -46,7 +46,7 @@ a {
 }
 
 .text-secondary {
-  color: $secondary-color;
+  color: #eece1a;
 }
 
 main {
@@ -55,12 +55,14 @@ main {
 
   .icons {
     margin-top: 1rem;
+    color: var(--color-text);
 
     .icon-fa {
       padding: 0.4rem;
+      color: var(--color-text);
 
       &:hover {
-        color: $secondary-color;
+        color: #eece1a;
         // sass method
         @include easeOut();
       }

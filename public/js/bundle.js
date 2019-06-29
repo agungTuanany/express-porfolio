@@ -31,3 +31,26 @@ const  toggleMenu = () => {
   };
 };
 menuBtn.addEventListener('click', toggleMenu);
+
+
+// Dark mode toggle
+const checkbox = document.querySelector('input[name=theme]');
+
+const toggleChange = () => {
+  if(checkbox.checked) {
+    trans();
+    document.documentElement.setAttribute('data-theme', 'dark');
+  } else {
+    trans();
+    document.documentElement.setAttribute('data-theme', 'light');
+  }
+}
+
+let trans = () => {
+  document.documentElement.classList.add('transition');
+  window.setTimeout(() => {
+    document.documentElement.classList.remove('transition');
+  }, 1000);
+}
+
+checkbox.addEventListener('change', toggleChange);
