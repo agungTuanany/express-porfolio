@@ -173,17 +173,27 @@ label {
       height: 160px; } }
 
 @media screen and (max-width: 500px) {
-  main#home h1 {
-    margin-top: 1rem;
-    font-size: 3.5rem; }
-  .bg-home:after {
-    top: 11rem !important;
-    right: 2rem !important;
-    width: 80% !important; }
   .menu-nav .nav-item {
     line-height: 1rem; }
     .menu-nav .nav-item .nav-link {
-      font-size: 1.5rem; } }
+      font-size: 1.5rem; }
+  main#home .bg-home:after {
+    top: 7rem !important;
+    right: 1.5rem !important;
+    width: 90% !important; }
+  main#home .home__heading {
+    margin-top: 1rem;
+    font-size: 3.5rem; }
+  main#home .home__title {
+    font-weight: 450 !important; }
+  main#about .bg-about:after {
+    top: 18rem !important;
+    width: 90% !important; }
+  main#about .about-bio .about__title {
+    margin-top: 1rem;
+    font-size: 3.5rem; }
+  main#about .about-bio .about-bio__title {
+    font-size: 1.2rem; } }
 
 * {
   box-sizing: border-box; }
@@ -238,10 +248,34 @@ main {
     main#home .bg-home.bg-home:after {
       content: '';
       position: absolute;
-      top: 103px;
+      top: 14rem;
       right: 0;
-      width: 100%;
-      height: 100%;
+      width: 100vh;
+      height: 50vh;
       background: url(./img/Asset-10.svg) var(--bg);
       background-repeat: no-repeat;
       z-index: -1; }
+
+#about .bg-about {
+  overflow: hidden; }
+  #about .bg-about.bg-about:after {
+    content: '';
+    position: absolute;
+    background: url(./img/Asset-60.svg) var(--bg);
+    background-repeat: no-repeat;
+    width: 100vh;
+    height: 60vh;
+    top: 11rem;
+    right: 0;
+    z-index: -1; }
+
+#about .about-bio .about-bio__title {
+  color: var(--color-text);
+  font-weight: 500;
+  font-size: 1.5rem;
+  text-align: left;
+  width: 63vh; }
+
+#about .about-skills .about-skills_p {
+  color: var(--color-text);
+  font-size: 1.1rem; }

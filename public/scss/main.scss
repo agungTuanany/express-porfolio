@@ -16,7 +16,6 @@ body {
 }
 
 // Headings
-
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   font-weight: 400;
@@ -76,6 +75,32 @@ main {
     .bg-home {
       @include background;
       overflow: hidden;
+    }
+  }
+}
+
+#about {
+
+
+  .bg-about {
+    @include background-about;
+    overflow: hidden;
+  }
+
+  .about-bio {
+    .about-bio__title {
+      color:var(--color-text);
+      font-weight: 500;
+      font-size: 1.5rem;
+      text-align: left;
+      width: 63vh;
+    }
+  }
+
+  .about-skills {
+    .about-skills_p {
+      color: var(--color-text);
+      font-size: 1.1rem;
     }
   }
 }
