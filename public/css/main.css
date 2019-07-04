@@ -210,15 +210,16 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   font-weight: 400; }
   h1.lg-heading, h2.lg-heading, h3.lg-heading, h4.lg-heading, h5.lg-heading, h6.lg-heading {
-    font-size: 6rem;
+    font-size: 8rem;
     color: var(--color-text); }
   h1.sm-heading, h2.sm-heading, h3.sm-heading, h4.sm-heading, h5.sm-heading, h6.sm-heading {
+    font-size: 2.5rem;
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
     color: var(--color-text); }
 
 a {
-  color: #fff;
+  color: var(--color-text);
   text-decoration: none; }
 
 .header-nav {
@@ -229,39 +230,47 @@ a {
 .text-secondary {
   color: #eece1a; }
 
+hr {
+  width: 50%;
+  margin: 0;
+  border: 3px solid; }
+
 main {
   padding: 4rem;
   height: 100%; }
-  main .icons {
+
+#home .bg-home {
+  overflow: hidden; }
+  #home .bg-home.bg-home:after {
+    content: '';
+    position: absolute;
+    top: 14rem;
+    right: 0;
+    width: 100vh;
+    height: 50vh;
+    background: url(../img/Asset-10.svg) var(--bg);
+    background-repeat: no-repeat;
+    z-index: -1; }
+
+#home .home-contaier {
+  margin-top: 15vh; }
+  #home .home-contaier .home__heading {
+    font-size: 8rem; }
+  #home .home-contaier .icons {
     margin-top: 1rem;
-    color: var(--color-text); }
-    main .icons .icon-fa {
-      padding: 0.4rem;
-      color: var(--color-text); }
-      main .icons .icon-fa:hover {
+    font-size: 2rem; }
+    #home .home-contaier .icons .icon-fa {
+      padding: 0.4rem; }
+      #home .home-contaier .icons .icon-fa:hover {
         color: #eece1a;
         transition: all .5s ease-out; }
-  main#home h1 {
-    margin-top: 20vh; }
-  main#home .bg-home {
-    overflow: hidden; }
-    main#home .bg-home.bg-home:after {
-      content: '';
-      position: absolute;
-      top: 14rem;
-      right: 0;
-      width: 100vh;
-      height: 50vh;
-      background: url(./img/Asset-10.svg) var(--bg);
-      background-repeat: no-repeat;
-      z-index: -1; }
 
 #about .bg-about {
   overflow: hidden; }
   #about .bg-about.bg-about:after {
     content: '';
     position: absolute;
-    background: url(./img/Asset-60.svg) var(--bg);
+    background: url(../img/Asset-60.svg) var(--bg);
     background-repeat: no-repeat;
     width: 100vh;
     height: 60vh;
@@ -270,12 +279,78 @@ main {
     z-index: -1; }
 
 #about .about-bio .about-bio__title {
-  color: var(--color-text);
   font-weight: 500;
-  font-size: 1.5rem;
   text-align: left;
-  width: 63vh; }
+  width: 46vw; }
 
-#about .about-skills .about-skills_p {
+#about .about-bio .about-bio__p {
+  font-size: 1.6rem;
   color: var(--color-text);
-  font-size: 1.1rem; }
+  width: 49vw; }
+
+#myWork .myWork-container {
+  margin-top: 15vh; }
+  #myWork .myWork-container .bg-myWork.bg-myWork:after {
+    content: '';
+    position: absolute;
+    background: url(../img/undraw-black.png) var(--bg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vh;
+    height: 100vh;
+    top: 15vh;
+    right: -3rem;
+    z-index: -1; }
+  #myWork .myWork-container .myWork-bio-title {
+    width: 50%; }
+
+section {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0 3rem;
+  padding-bottom: 3rem; }
+
+article {
+  margin: 1rem 0; }
+
+/* Grid-based layout */
+@supports (display: grid) {
+  section {
+    max-width: 10000px;
+    margin: 0; }
+  article {
+    margin: 0; }
+  .deals {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1rem; } }
+
+.deals {
+  font-size: 80%; }
+
+.sale-item {
+  display: flex;
+  flex-flow: column;
+  border: 1px solid black;
+  border-radius: 1rem;
+  padding: 2rem;
+  color: var(--color-text); }
+  .sale-item > h1 {
+    margin: 1rem 1rem 0;
+    font-size: 2rem;
+    font-weight: 501; }
+  .sale-item > ul {
+    margin: 0 0 1rem; }
+  .sale-item > p {
+    margin: 0.25em 1rem 1rem; }
+  .sale-item > img {
+    order: -1;
+    align-self: center; }
+  .sale-item > button {
+    margin-top: auto;
+    background: teal;
+    color: white;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1.2rem; }

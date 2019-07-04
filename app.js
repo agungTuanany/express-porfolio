@@ -11,9 +11,10 @@ const myWork = require('./routes/myWork');
 const contact = require('./routes/contact');
 
 // handling static folder
-app.use('*/js', express.static(path.join(__dirname, 'public/js')));
-app.use('*/css', express.static(path.join(__dirname, 'public/css')));
-app.use('*/img', express.static(path.join(__dirname, 'public/img')));
+//app.use('*/js', express.static(path.join(__dirname, 'public/js')));
+//app.use('*/css', express.static(path.join(__dirname, 'public/css')));
+//app.use('*/img', express.static(path.join(__dirname, 'public/img')));
+app.use('/public', express.static('public'));
 
 // Handlebars Middleware
 app.engine('hbs', exphbs({

@@ -21,20 +21,20 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 
   &.lg-heading {
-  font-size: 6rem;
+  font-size: 8rem;
   color: var(--color-text);
   }
 
   &.sm-heading {
+    font-size: 2.5rem;
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    // lighten is a sass features
     color: var(--color-text);
   }
 }
 
 a {
-  color : #fff;
+  color : var(--color-text);
   text-decoration: none;
 }
 
@@ -48,40 +48,47 @@ a {
   color: #eece1a;
 }
 
+hr {
+  width: 50%;
+  margin: 0;
+  border: 3px solid;
+}
+
 main {
   padding: 4rem;
   height: 100%;
+}
 
-  .icons {
-    margin-top: 1rem;
-    color: var(--color-text);
-
-    .icon-fa {
-      padding: 0.4rem;
-      color: var(--color-text);
-
-      &:hover {
-        color: #eece1a;
-        // sass method
-        @include easeOut();
-      }
-    }
+#home {
+  .bg-home {
+    @include background;
+    overflow: hidden;
   }
 
-  &#home {
-    h1 {
-      margin-top: 20vh;
+  .home-contaier {
+    margin-top: 15vh;
+
+    .home__heading {
+      font-size: 8rem;
     }
-    .bg-home {
-      @include background;
-      overflow: hidden;
+
+    .icons {
+      margin-top: 1rem;
+      font-size: 2rem;
+
+      .icon-fa {
+        padding: 0.4rem;
+
+        &:hover {
+          color: #eece1a;
+          @include easeOut;
+        }
+      }
     }
   }
 }
 
 #about {
-
-
   .bg-about {
     @include background-about;
     overflow: hidden;
@@ -89,18 +96,103 @@ main {
 
   .about-bio {
     .about-bio__title {
-      color:var(--color-text);
       font-weight: 500;
-      font-size: 1.5rem;
       text-align: left;
-      width: 63vh;
+      width: 46vw;
     }
-  }
 
-  .about-skills {
-    .about-skills_p {
+    .about-bio__p {
+      font-size: 1.6rem;;
       color: var(--color-text);
-      font-size: 1.1rem;
+      width: 49vw;
     }
   }
 }
+
+#myWork {
+  .myWork-container {
+    margin-top: 15vh;
+
+    .bg-myWork {
+      @include background-myWork;
+    }
+
+    .myWork-bio-title {
+      width: 50%;
+    }
+  }
+}
+
+section {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0 3rem;
+  padding-bottom: 3rem;
+}
+
+article {
+  margin: 1rem 0;
+}
+
+/* Grid-based layout */
+@supports (display: grid) {
+  section {
+    max-width: 10000px;
+    margin: 0;
+  }
+
+  article {
+    margin: 0;
+  }
+
+  .deals {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1rem;
+  }
+}
+
+.deals {
+  font-size: 80%;
+}
+
+.sale-item {
+  display: flex;
+  flex-flow: column;
+  //flex-wrap: wrap;
+  border: 1px solid black;
+  border-radius: 1rem;
+  padding: 2rem;
+  color: var(--color-text);
+
+  > h1 {
+    margin: 1rem 1rem 0;
+    font-size: 2rem;
+    font-weight: 501;
+  }
+
+  > ul {
+    margin: 0 0 1rem;
+  }
+
+  > p {
+    margin: 0.25em 1rem 1rem;
+  }
+
+  > img {
+    order: -1;
+    align-self: center;
+  }
+
+  > button {
+    margin-top: auto;
+    background: teal;
+    color: white;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+  }
+}
+
+

@@ -1,2 +1,26 @@
-<h1>{{title}}</h1>
-<h1>{{title}} page is underconstruction</h1>
+<main id='myWork'>
+  <div class='myWork-container'>
+    <h1 class='lg-heading myWork-heading'>My <span class='text-secondary'>Project</span></h1>
+    <div class='bg-myWork'></div>
+    <h2 class='sm-heading myWork-bio-title'>
+      I specialize in Full Stack Development to deliver the real value. This sort of my project I've been working on lately.
+    </h2>
+  </div>
+</main>
+
+<section class='deals'>
+  {{#each portfolio}}
+    <article class='sale-item'>
+      <h1>{{this.title}}</h1>
+      <p>{{this.description}}</p>
+      <ul>
+        {{#each this.details}}
+          <li>{{this}}</li>
+        {{/each}}
+      </ul>
+      <img src={{this.img}} alt=''>
+      <button>See details</button>
+    </article>
+  {{/each}}
+
+</section>

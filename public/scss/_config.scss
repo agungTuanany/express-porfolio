@@ -2,10 +2,10 @@
 $background-opacity: 0.9;
 
 //images
-$show-home-image: true;
-$home-image: url(./img/Asset-10.svg);
-$show-about-image: true;
-$about-image: url(./img/Asset-60.svg);
+$show-image: true;
+$home-image: url(../img/Asset-10.svg);
+$about-image: url(../img/Asset-60.svg);
+$myWork-image: url(../img/undraw-black.png);
 
 html {
   --bg: #FCFCFC;
@@ -26,7 +26,7 @@ html[data-theme='dark'] {
 }
 
 @mixin background {
-  @if $show-home-image {
+  @if $show-image {
     &.bg-home {
 
       // sudo element
@@ -47,7 +47,7 @@ html[data-theme='dark'] {
 }
 
 @mixin background-about {
-  @if $show-about-image {
+  @if $show-image {
     &.bg-about {
 
       &:after {
@@ -59,6 +59,26 @@ html[data-theme='dark'] {
         height: 60vh;
         top: 11rem;
         right: 0;
+        z-index: -1;
+      }
+    }
+  }
+}
+
+@mixin background-myWork {
+  @if $show-image {
+    &.bg-myWork {
+
+      &:after {
+        content: '';
+        position: absolute;
+        background: $myWork-image var(--bg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100vh;
+        height: 100vh;
+        top: 15vh;
+        right: -3rem;
         z-index: -1;
       }
     }

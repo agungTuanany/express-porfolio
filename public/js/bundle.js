@@ -51,6 +51,62 @@ let trans = () => {
   window.setTimeout(() => {
     document.documentElement.classList.remove('transition');
   }, 1000);
-}
+};
 
 checkbox.addEventListener('change', toggleChange);
+
+
+/**
+
+// Load Portfolio
+const portfolioDOM = document.querySelector('.deals');
+
+const getPortfolio = async () => {
+  try {
+    let result = await fetch('./public/json/portfolio.json');
+    //console.log(result);
+    let data = await result.json();
+    //console.log(data);
+    let portfolios = data.portfolio;
+    console.log(portfolios);
+    portfolios = portfolios.map(portfolio => {
+      const  { id }  = portfolio.sys;
+      const { title, description } = portfolio.fields;
+      const { details } = portfolio.fields;
+      const image = portfolio.img.fields.file.url;
+    });
+    return { title, description, details, image  };
+
+  } catch(error) {
+    console.log(error);
+  };
+};
+
+const displayPortfolio = (portfolios) => {
+  let result = '';
+  portfolios.forEach(item => {
+    result += `
+      <article class='sale-item'>
+        <h1 class='title'></h1>
+        <p> This the best computer money can buy, if you dont have much money.</p>
+        <ul>
+          <li>Computer</li>
+          <li>Monitor</li>
+          <li>keyboard</li>
+          <li>mouse</li>
+        </ul>
+        <img src='./img/Asset-10.svg' alt=''>
+        <button>See details</button>
+      </article>
+    `;
+  });
+  portfolioDOM.innerHTML = result;
+};
+
+document.addEventListener('DOMContentLoaded', () => {
+  getPortfolio().then(portfolio => {
+    displayPortfolio();
+  });
+});
+
+ **/

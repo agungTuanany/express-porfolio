@@ -38,6 +38,7 @@ Enjoy
 * Node.js
 * Express
 * Sass
+* Grid system & Flexbox
 
 ## plugin
 
@@ -53,4 +54,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 [lukaszadam](https://lukaszadam.com/illustrations)
+[Jen Simmons](https://www.youtube.com/watch?v=dQHtT47eH0M) for using Flexbox
++ CSS Grid Together
 
