@@ -31,7 +31,7 @@
     }
   }
 
-  .menu-hav {
+  .menu-nav {
     height: 75vh;
     tranform: translate3d(-100%, 0, 0);
     font-size: 1.6rem;
@@ -49,6 +49,58 @@
     }
   }
 
+  /* Home Page */
+  main#home {
+    .home-container {
+      margin-top: 0 !important;
+    }
+
+    .bg-home {
+      &:after {
+        right: 4rem !important;
+        width: 80vh !important;
+      }
+    }
+  }
+
+  /* About Page */
+  main#about {
+    .bg-about {
+      &:after {
+        width: 65vh !important;
+        height: 50vh !important;
+        top: 18rem !important;
+      }
+    }
+
+    .about-container {
+      .about__title {
+        width: unset;
+      }
+      .about__p {
+        width: unset;
+      }
+    }
+  }
+
+  /* My Project Page */
+  main#myWork {
+    .myWork-container {
+      margin-top: 0;
+    }
+    .myWork__title {
+      width: unset !important;
+    }
+    .bg-myWork {
+      &:after {
+        top: 13rem !important;
+        right: 0 !important;
+        width: 75vh !important;
+        height: 73vh !important;;
+      }
+    }
+  }
+
 }
 
 // SmartPhones
@@ -57,10 +109,10 @@
   // Menu Nav
   .menu-nav {
     .nav-item {
-      line-height: 1rem;
+      line-height: 3.5rem;
 
       .nav-link {
-        font-size: 1.5rem;
+        font-size: 2.5rem;
       }
     }
   }
@@ -69,19 +121,19 @@
   main#home {
     .bg-home {
       &:after {
-        top:7rem !important;
+        top: 15rem !important;
         right: 1.5rem !important;
-        width: 90% !important;
+        width: 55vh !important;
       }
     }
 
-    .home__heading  {
-      margin-top: 1rem;
-      font-size: 3.5rem;
-    }
-
-    .home__title {
-      font-weight: 450 !important;
+    .home-container {
+      .home__heading {
+        font-size: 6rem !important;
+      }
+      .home__title {
+        font-weight: 450 !important;
+      }
     }
   }
 
@@ -89,18 +141,39 @@
   main#about {
     .bg-about {
       &:after {
-        top: 18rem !important;
-        width: 90% !important;
+        top: 40rem !important;
+        width: 55vh !important;
       }
     }
-
-    .about-bio {
-      .about__title {
-        margin-top: 1rem;
-        font-size: 3.5rem;
+    .about-container {
+      hr {
+        width: 100% !important;
       }
-      .about-bio__title {
-        font-size: 1.2rem;
+      .about-heading {
+        font-size: 6rem !important;
+      }
+      .about__title {
+        width: 52vh !important;
+      }
+    }
+  }
+
+  main#myWork {
+    .myWork-container {
+      .myWork-heading {
+        font-size: 6rem !important;
+      }
+      .myWork__title {
+        text-align: left;
+        width: 50vh !important;
+      }
+      .bg-myWork {
+        &:after {
+          top: 25rem !important;
+          right: 0 !important;
+          width: 55vh !important;
+          height: 59vh !important;
+        }
       }
     }
   }

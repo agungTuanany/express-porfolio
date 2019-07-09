@@ -65,7 +65,7 @@ main {
     overflow: hidden;
   }
 
-  .home-contaier {
+  .home-container {
     margin-top: 15vh;
 
     .home__heading {
@@ -94,14 +94,14 @@ main {
     overflow: hidden;
   }
 
-  .about-bio {
-    .about-bio__title {
+  .about-container {
+    .about__title {
       font-weight: 500;
       text-align: left;
       width: 46vw;
     }
 
-    .about-bio__p {
+    .about__p {
       font-size: 1.6rem;;
       color: var(--color-text);
       width: 49vw;
@@ -117,7 +117,7 @@ main {
       @include background-myWork;
     }
 
-    .myWork-bio-title {
+    .myWork__title {
       width: 50%;
     }
   }
