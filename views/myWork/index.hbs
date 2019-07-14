@@ -8,9 +8,9 @@
   </div>
 </main>
 
-<section class='deals'>
+<section class='myWork-section'>
   {{#each portfolio}}
-    <article class='sale-item'>
+    <article class='myWork-portfolio'>
       <h1>{{this.title}}</h1>
       <p>{{this.description}}</p>
       <ul>
@@ -19,7 +19,7 @@
         {{/each}}
       </ul>
       <img src={{this.img}} alt=''>
-      <button>See details</button>
+      <a class='btn'  href='/portfolio/details/{{id}}'>See details</a>
     </article>
   {{/each}}
 

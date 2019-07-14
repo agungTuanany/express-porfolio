@@ -1,5 +1,13 @@
 // WideScreens
+@include mediaHd {
+  .myWork-section {
+    margin-top: 29rem !important;
+  }
+}
 @include mediaXL {
+  .myWork-section {
+    margin-top: 11rem;
+  }
 
 }
 
@@ -43,7 +51,9 @@
 
     .portrait {
       // will change with random words
-      background: url('./img/background.png');
+      background: url('../img/profile-pic-sm.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
       width: 150px;
       height: 160px;
     }

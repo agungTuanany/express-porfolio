@@ -120,3 +120,9 @@ html.trasition *:after {
     @content;
   }
 }
+
+@mixin mediaHd {
+  @media screen and (min-width: 1600px) {
+    @content;
+  }
+}

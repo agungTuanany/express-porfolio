@@ -53,7 +53,10 @@ Enjoy
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
 ## Acknowledgments
-[lukaszadam](https://lukaszadam.com/illustrations)
-[Jen Simmons](https://www.youtube.com/watch?v=dQHtT47eH0M) for using Flexbox
-+ CSS Grid Together
+[Brad
+Traversy](https://www.youtube.com/watch?v=gYzHS-n2gqU&list=PLillGF-RfqbYoGoCjKoMOkVznV6aSXKzU) Portfolio boilerplate
+
+[lukaszadam](https://lukaszadam.com/illustrations) svg images
+
+[Jen Simmons](https://www.youtube.com/watch?v=dQHtT47eH0M) for using Flexbox CSS Grid Together
 
