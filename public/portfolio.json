@@ -19,8 +19,10 @@
       "sys": {"id": "2"},
       "fields": {
         "title": "Vidjot",
-        "description": "Vidjot is a CRUD application with login functionality and server-side validation form, built with VanillaJS, Node.js, express, mongoDB.",
-        "details": [ "HTML & CSS", "VanillaJS", "NodeJS", "mongoDB | using mlab", "Express"]
+        "description": "Vidjot is a CRUD application with login functionality and server-side form validation",
+        "details": [ "HTML & CSS", "VanillaJS", "NodeJS", "mongoDB | using mlab", "Express"],
+        "github": "https://github.com/agungTuanany/vidjot",
+        "web": "https://vidjot-prodx.herokuapp.com"
       },
       "img":{
         "fields": {
@@ -34,8 +36,10 @@
       "sys": {"id": "3"},
       "fields": {
         "title": "Shopping cart",
-        "description": "A e-commerce web build with VanillaJS, Injecting data at nay level of component, using local-storage DOM, keep the logic in method, and learn event-bubling",
-        "details": [ "html", "CSS", "VanillaJS"]
+        "description": "A e-commerce web build, injecting data at any level of component, using local-storage DOM, keep the logic in method, and event-bubling",
+        "details": [ "html", "CSS", "VanillaJS"],
+        "github": "https://github.com/agungTuanany/ShoppingCart",
+        "web": "https://agungTuanany.github.io/ShoppingCart"
       },
       "img":{
         "fields": {
@@ -50,7 +54,9 @@
       "fields": {
         "title": "Grandma Sweets",
         "description": " A e-commerce web using local-storage to count the take-away cakes",
-        "details": [ "html", "CSS", "VanillaJS", "SCSS", "NodeJS"]
+        "details": [ "html", "CSS", "VanillaJS", "SCSS", "NodeJS"],
+        "github": "https://github.com/agungTuanany/Grandma-sweets",
+        "web": "https://agungTuanany.github.io/Grandma-sweets"
       },
       "img":{
         "fields": {
@@ -64,8 +70,10 @@
       "sys": {"id": "5"},
       "fields": {
         "title": "Car Dealer",
-        "description": "A e-commerce web build with VanillaJS Bootstrap",
-        "details": [ "html", "CSS", "VanillaJS", "SCSS", "NodeJS"]
+        "description": "A e-commerce web.",
+        "details": [ "html", "CSS", "VanillaJS", "SCSS", "NodeJS"],
+        "github": "https://github.com/agungTuanany/car-dealer",
+        "web": "https://agungTuanany.github.io/car-dealer"
       },
       "img":{
         "fields": {
@@ -79,8 +87,10 @@
       "sys": {"id": "6"},
       "fields": {
         "title": "Responsive Restaurant",
-        "description": "A restaurant web build with VanillaJS Bootstrap, JQuery",
-        "details": [ "HTML5", "CSS3", "VanillaJS", "JQuery, Bootstrap"]
+        "description": "A responsive restaurant e-commerce web.",
+        "details": [ "HTML5", "CSS3", "VanillaJS", "JQuery, Bootstrap"],
+        "github": "https://github.com/agungTuanany/Responsive-Restaurant",
+        "web": "https://agungTuanany.github.io/Responsive-Restaurant"
       },
       "img":{
         "fields": {

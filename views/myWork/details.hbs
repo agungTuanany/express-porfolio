@@ -1,13 +1,21 @@
 <main class='details'>
-  <img src='{{img}}' alt=''>
-  <h1>{{titlePortfolio}}</h1>
+  <img class='details-img' src='{{img}}' alt=''>
+  <h1 class='details-title'>{{titlePortfolio}}</h1>
   <hr>
-  <h1>{{description}}</h1>
-  <ul>
+  <p class='details-desc'>{{description}}</p>
+  <ul class='details-list'>
   {{#each details}}
     <li>{{this}}</li>
   {{/each}}
   </ul>
 
-  <a href='/portfolio'>back</a>
+  <div class='icon'>
+    <a class='btn-details' href='/portfolio'>back</a>
+    <a class='icon-fa' href='{{github}}' target='_blank'>
+      <i class='fab fa-github fa-3x'></i>
+    </a>
+    <a class='icon-fa' href='{{web}}' target='_blan'>
+      <i class='fab fa-edge fa-3x'></i>
+    </a>
+  </div>
 </main>

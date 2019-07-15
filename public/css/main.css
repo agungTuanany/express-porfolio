@@ -396,9 +396,31 @@ article {
   .myWork-portfolio > img {
     order: -1;
     align-self: center;
-    width: 50vh;
-    height: 100%; }
+    width: 30vh;
+    height: 30vh; }
   .myWork-portfolio > .btn {
+    margin-top: auto;
+    background: teal;
+    color: white;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    text-align: center; }
+
+/* Details Page */
+.details {
+  color: var(--color-text); }
+  .details .details-img {
+    display: block; }
+  .details .details-title {
+    margin: 2rem auto;
+    font-size: 4rem; }
+  .details .details-desc {
+    font-size: 2rem; }
+  .details .details-list {
+    font-size: 1.3rem; }
+  .details .btn-details {
     margin-top: auto;
     background: teal;
     color: white;

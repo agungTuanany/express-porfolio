@@ -10,9 +10,9 @@ let portfolios = data.portfolio;
 // map portfolios
 const mapPortfolios = portfolios.map(item => {
   const { id } = item.sys;
-  const { title, description, details } = item.fields;
+  const { title, description, details, github, web } = item.fields;
   const img = item.img.fields.file.url;
-  return { id, title, description, details, img };
+  return { id, title, description, details, img, github, web };
 });
 
 // Portfolio Route
@@ -36,7 +36,9 @@ router.get('/details/:id', (req, res) => {
         img: mapPortfolios[i].img,
         titlePortfolio : mapPortfolios[i].title,
         details: mapPortfolios[i].details,
-        description: mapPortfolios[i].description
+        description: mapPortfolios[i].description,
+        github: mapPortfolios[i].github,
+        web: mapPortfolios[i].web
       });
     };
   };
