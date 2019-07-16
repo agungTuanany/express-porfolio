@@ -111,6 +111,21 @@
     }
   }
 
+  /* Details Page */
+  .details {
+    .details-img {
+      width: 75vh !important;
+    }
+    > hr {
+      margin: 0 10rem !important;
+    }
+
+    .details-list {
+      text-align: left;
+    }
+  }
+
+
 }
 
 // SmartPhones
@@ -185,6 +200,24 @@
           height: 59vh !important;
         }
       }
+    }
+  }
+
+  /* Details Page */
+
+  .details {
+    .details-img {
+      width: 42vh !important;
+    }
+    > hr {
+      margin: 0 6rem !important;
+    }
+    .details-desc {
+      font-size: 1.3rem !important;
+    }
+    .details-list {
+      font-size: 1rem !important;
+      text-align: left;
     }
   }
 

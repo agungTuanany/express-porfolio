@@ -207,7 +207,14 @@ label {
     top: 13rem !important;
     right: 0 !important;
     width: 75vh !important;
-    height: 73vh !important; } }
+    height: 73vh !important; }
+  /* Details Page */
+  .details .details-img {
+    width: 75vh !important; }
+  .details > hr {
+    margin: 0 10rem !important; }
+  .details .details-list {
+    text-align: left; } }
 
 @media screen and (max-width: 500px) {
   .menu-nav .nav-item {
@@ -240,7 +247,17 @@ label {
     top: 25rem !important;
     right: 0 !important;
     width: 55vh !important;
-    height: 59vh !important; } }
+    height: 59vh !important; }
+  /* Details Page */
+  .details .details-img {
+    width: 42vh !important; }
+  .details > hr {
+    margin: 0 6rem !important; }
+  .details .details-desc {
+    font-size: 1.3rem !important; }
+  .details .details-list {
+    font-size: 1rem !important;
+    text-align: left; } }
 
 * {
   box-sizing: border-box; }
@@ -412,7 +429,9 @@ article {
 .details {
   color: var(--color-text); }
   .details .details-img {
-    display: block; }
+    display: block;
+    margin: 0 auto;
+    width: 85vh; }
   .details .details-title {
     margin: 2rem auto;
     font-size: 4rem; }
@@ -420,14 +439,17 @@ article {
     font-size: 2rem; }
   .details .details-list {
     font-size: 1.3rem; }
+  .details .icon {
+    text-align: center; }
   .details .btn-details {
-    margin-top: auto;
+    margin-top: 2rem;
     background: teal;
     color: white;
     padding: 0.5rem;
     border: none;
     border-radius: 1rem;
     font-size: 1.2rem;
+    display: block;
     text-align: center; }
 
 footer {

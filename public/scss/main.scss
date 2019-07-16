@@ -203,6 +203,8 @@ article {
   color: var(--color-text);
   .details-img {
     display: block;
+    margin: 0 auto;
+    width: 85vh;
   }
   .details-title {
     margin: 2rem auto;
@@ -214,14 +216,18 @@ article {
   .details-list {
     font-size: 1.3rem;
   }
+  .icon {
+    text-align: center;
+  }
   .btn-details {
-    margin-top: auto;
+    margin-top: 2rem;
     background: teal;
     color: white;
     padding: 0.5rem;
     border: none;
     border-radius: 1rem;
     font-size: 1.2rem;
+    display: block;
     text-align: center;
   }
 }
