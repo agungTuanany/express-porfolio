@@ -105,6 +105,10 @@ main {
       font-size: 1.6rem;;
       color: var(--color-text);
       width: 49vw;
+
+      span {
+        color: var(--color-headings);
+      }
     }
   }
 }
@@ -184,6 +188,7 @@ article {
     align-self: center;
     width: 30vh;
     height: 30vh;
+    padding: 0 1.5rem;
   }
 
   > .btn {

@@ -149,12 +149,28 @@ label {
     width: 45px; }
 
 @media screen and (min-width: 1600px) {
-  .myWork-section {
-    margin-top: 29rem !important; } }
+  main#myWork .myWork-container {
+    margin-top: 0; }
+    main#myWork .myWork-container .myWork-heading {
+      font-size: 16rem; }
+    main#myWork .myWork-container .myWork__title {
+      font-size: 6.5rem; }
+  .myWork-section .myWork-portfolio > img {
+    width: 20vh !important;
+    height: 20vh !important; } }
 
 @media screen and (min-width: 1171px) {
+  main#myWork .myWork-container {
+    margin-top: 0; }
+    main#myWork .myWork-container .myWork-heading {
+      font-size: 16rem; }
+    main#myWork .myWork-container .myWork__title {
+      font-size: 4.5rem; }
   .myWork-section {
-    margin-top: 11rem; } }
+    margin-top: 11rem; }
+    .myWork-section .myWork-portfolio > img {
+      width: 25vh;
+      height: 25vh; } }
 
 @media screen and (max-width: 769px) {
   main {
@@ -213,7 +229,7 @@ label {
   .details .details-img {
     width: 75vh !important; }
   .details > hr {
-    margin: 0 10rem !important; }
+    margin: 0 8rem !important; }
   .details .details-list {
     text-align: left; } }
 
@@ -355,6 +371,8 @@ main {
   font-size: 1.6rem;
   color: var(--color-text);
   width: 49vw; }
+  #about .about-container .about__p span {
+    color: var(--color-headings); }
 
 #myWork .myWork-container {
   margin-top: 15vh; }
@@ -415,7 +433,8 @@ article {
     order: -1;
     align-self: center;
     width: 30vh;
-    height: 30vh; }
+    height: 30vh;
+    padding: 0 1.5rem; }
   .myWork-portfolio > .btn {
     margin-top: auto;
     background: teal;

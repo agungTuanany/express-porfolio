@@ -1,12 +1,46 @@
 // WideScreens
 @include mediaHd {
+  main#myWork {
+    .myWork-container {
+      margin-top: 0;
+      .myWork-heading {
+        font-size: 16rem;
+      }
+      .myWork__title {
+        font-size: 6.5rem;
+      }
+    }
+  }
   .myWork-section {
-    margin-top: 29rem !important;
+    .myWork-portfolio {
+      > img {
+        width: 20vh !important;
+        height: 20vh !important;
+      }
+    }
   }
 }
 @include mediaXL {
+  main#myWork {
+    .myWork-container {
+      margin-top: 0;
+      .myWork-heading {
+        font-size: 16rem;
+      }
+      .myWork__title {
+        font-size: 4.5rem;
+      }
+    }
+  }
   .myWork-section {
     margin-top: 11rem;
+
+    .myWork-portfolio {
+      > img {
+        width: 25vh;
+        height: 25vh;
+      }
+    }
   }
 
 }
@@ -117,7 +151,7 @@
       width: 75vh !important;
     }
     > hr {
-      margin: 0 10rem !important;
+      margin: 0 8rem !important;
     }
 
     .details-list {
