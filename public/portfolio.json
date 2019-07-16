@@ -36,7 +36,7 @@
       "sys": {"id": "3"},
       "fields": {
         "title": "Shopping cart",
-        "description": "A e-commerce web build, injecting data at any level of component, using local-storage DOM, keep the logic in method, and event-bubling",
+        "description": "A e-commerce web, injecting data at any level of component, using local-storage DOM, keep the logic in method.",
         "details": [ "html", "CSS", "VanillaJS"],
         "github": "https://github.com/agungTuanany/ShoppingCart",
         "web": "https://agungTuanany.github.io/ShoppingCart"
