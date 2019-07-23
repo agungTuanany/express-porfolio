@@ -1,21 +1,6 @@
 {
   "portfolio": [
     {
-      "sys":{"id": "1"},
-      "fields": {
-        "title": "details changed",
-        "description": "This is the best computer you can buy, if you have defisit money",
-        "details": [ "html", "CSS", "VanillaJS", "SCSS", "NodeJS"]
-      },
-      "img":{
-        "fields": {
-          "file": {
-            "url": "./public/img/Asset-10.svg"
-          }
-        }
-      }
-    },
-    {
       "sys": {"id": "2"},
       "fields": {
         "title": "Vidjot",
@@ -54,7 +39,7 @@
       "fields": {
         "title": "Dapur Mama Imma",
         "description": " A e-commerce web using local-storage DOM to count the take-away cakes, I use JSON for cake database.",
-        "details": [ "HTML5", "CSS3", "VanillaJS", "NodeJS"],
+        "details": [ "HTML5", "CSS3", "VanillaJS"],
         "github": "https://github.com/agungTuanany/Grandma-sweets",
         "web": "https://agungTuanany.github.io/Grandma-sweets"
       },
