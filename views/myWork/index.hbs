@@ -12,7 +12,7 @@
   {{#each portfolio}}
     <article class='myWork-portfolio'>
       <h1>{{this.title}}</h1>
-      <p>{{this.description}}</p>
+      <p>{{truncate this.description 100}}</p>
       <ul>
         {{#each this.details}}
           <li>{{this}}</li>

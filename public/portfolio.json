@@ -1,11 +1,28 @@
 {
   "portfolio": [
     {
+      "sys": {"id": "1"},
+      "fields": {
+        "title": "StoryBooks",
+        "description": "StoryBooks is a CRUD apps for writing a list of story or blog-post, you can create your own story in 'public' or 'private', if you choose your story in private, your private story wouldn't show up in Public Stories",
+        "details": [ "HTML5","SASS", "Materialize 1.0.x", "VanillaJS", "NodeJS", "mongoDB | using mongoDB Atlas", "Express"],
+        "github": "https://github.com/agungTuanany/storybooks",
+        "web": "https://dev-storybooks.herokuapp.com"
+      },
+      "img":{
+        "fields": {
+          "file": {
+            "url": "./public/img/storybooks.gif"
+          }
+        }
+      }
+    },
+    {
       "sys": {"id": "2"},
       "fields": {
         "title": "Vidjot",
         "description": "Vidjot is a CRUD application with login functionality and server-side form validation",
-        "details": [ "HTML5","SASS", "VanillaJS", "NodeJS", "mongoDB | using mlab", "Express"],
+        "details": [ "HTML5","SASS", "Bootstrap 4", "VanillaJS", "NodeJS", "mongoDB | using mlab", "Express"],
         "github": "https://github.com/agungTuanany/vidjot",
         "web": "https://vidjot-prodx.herokuapp.com"
       },

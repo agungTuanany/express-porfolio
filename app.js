@@ -2,6 +2,11 @@ const express = require('express');
 const exphbs = require('express-handlebars');
 const path = require('path');
 
+// handlebars helpers
+const {
+  truncate,
+} = require('./helpers/hbs');
+
 const app = express();
 
 // Load router
@@ -23,6 +28,9 @@ app.engine('hbs', exphbs({
   LayoutsDir: __dirname + '/views/layouts',
   partialsDir: __dirname + '/views/partials',
   myWorkDir: __dirname + '/views/myWork',
+  helpers: {
+    truncate
+  }
 }));
 app.set('view engine', 'hbs');
 
