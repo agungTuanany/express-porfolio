@@ -59,6 +59,15 @@ main {
   height: 100%;
 }
 
+.icon-fa {
+	padding: 0.4rem;
+
+	&:hover {
+		color: #eece1a;
+		@include easeOut;
+	}
+}
+
 #home {
   .bg-home {
     @include background;
@@ -70,20 +79,6 @@ main {
 
     .home__heading {
       font-size: 8rem;
-    }
-
-    .icons {
-      margin-top: 1rem;
-      font-size: 2rem;
-
-      .icon-fa {
-        padding: 0.4rem;
-
-        &:hover {
-          color: #eece1a;
-          @include easeOut;
-        }
-      }
     }
   }
 }

@@ -320,6 +320,12 @@ main {
   padding: 4rem;
   height: 100%; }
 
+.icon-fa {
+  padding: 0.4rem; }
+  .icon-fa:hover {
+    color: #eece1a;
+    transition: all .5s ease-out; }
+
 #home .bg-home {
   overflow: hidden; }
   #home .bg-home.bg-home {
@@ -340,14 +346,6 @@ main {
   margin-top: 15vh; }
   #home .home-container .home__heading {
     font-size: 8rem; }
-  #home .home-container .icons {
-    margin-top: 1rem;
-    font-size: 2rem; }
-    #home .home-container .icons .icon-fa {
-      padding: 0.4rem; }
-      #home .home-container .icons .icon-fa:hover {
-        color: #eece1a;
-        transition: all .5s ease-out; }
 
 #about .bg-about {
   overflow: hidden; }
