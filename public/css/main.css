@@ -332,7 +332,7 @@ main {
       right: 0;
       width: 100vh;
       height: 50vh;
-      background: url(../img/Asset-10.svg) var(--bg);
+      background: url(../img/Asset-10.svg);
       background-repeat: no-repeat;
       z-index: -1; }
 
@@ -354,7 +354,7 @@ main {
   #about .bg-about.bg-about:after {
     content: '';
     position: absolute;
-    background: url(../img/Asset-60.svg) var(--bg);
+    background: url(../img/Asset-60.svg);
     background-repeat: no-repeat;
     width: 100vh;
     height: 60vh;
@@ -379,7 +379,7 @@ main {
   #myWork .myWork-container .bg-myWork.bg-myWork:after {
     content: '';
     position: absolute;
-    background: url(../img/undraw-black.png) var(--bg);
+    background: url(../img/undraw-black.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vh;
