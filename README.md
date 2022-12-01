@@ -11,7 +11,7 @@ These instructions will get you a copy of the project up and running on your loc
 1. Clone the repo
 
 ```
-git clone https://github.com/agungTuanany/express-porfolio.git
+git clone https://github.com/agungTuanany/express-portfolio.git
 ```
 
 2. Install pakcage.json file
